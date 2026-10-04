@@ -1,0 +1,208 @@
+/* General styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* Navigation */
+
+nav {
+    background-color: #263b5e;
+    color: white;
+
+    padding: 18px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    font-size: 24px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* Profile */
+
+.profile {
+    background-color: #dce8f7;
+
+    padding: 60px 10%;
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.profile img {
+    width: 180px;
+    height: 180px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 5px solid white;
+}
+
+.profile h1 {
+    font-size: 42px;
+    color: #263b5e;
+    margin-bottom: 10px;
+}
+
+.profile p {
+    font-size: 18px;
+}
+
+
+/* Sections */
+
+section {
+    width: 80%;
+    max-width: 1000px;
+
+    margin: 40px auto;
+
+    padding: 30px;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #263b5e;
+
+    margin-bottom: 15px;
+
+    border-bottom: 2px solid #263b5e;
+
+    padding-bottom: 8px;
+}
+
+
+/* Cards */
+
+.card {
+    background-color: #f1f5fa;
+
+    padding: 20px;
+
+    border-left: 5px solid #263b5e;
+
+    border-radius: 5px;
+}
+
+
+/* Skills */
+
+.skills-container {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+}
+
+.skills-container span {
+    background-color: #263b5e;
+
+    color: white;
+
+    padding: 10px 18px;
+
+    border-radius: 20px;
+}
+
+
+/* Lists */
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+
+/* Links */
+
+a {
+    color: #1d5fa7;
+}
+
+a:hover {
+    color: #e67e22;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #263b5e;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 50px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-links {
+        text-align: center;
+    }
+
+    .nav-links a {
+        margin: 5px;
+        display: inline-block;
+    }
+
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile h1 {
+        font-size: 32px;
+    }
+
+    section {
+        width: 90%;
+    }
+}
